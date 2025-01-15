@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+@use "../layout" as *;
+
+.site-services {
+  background-color: $color-background-default;
+  // background-color: #ffffff;
+  padding-block-start: $section-padding-block;
+
+  &__text {
+    span {
+      display: block;
+    }
+  }
+}
+.price-tiers {
+  min-width: max-content;
+  z-index: 99;
+  position: relative;
+  // transform: translateX(20%);
+}
+.price-tier {
+  min-width: 10rem;
+  background-color: #ffffff;
+  // background-color: rgb(198, 221, 213);
+  ul {
+    // display: block;
+    padding-inline-start: 0.9rem;
+  }
+  .price {
+    text-align: center;
+  }
+}

@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+.site-booking {
+  background-image: url(../public/spa-imgs/pexels-eva-bronzini-6140925.jpg);
+  background-size: cover;
+  background-position: center;
+  &__text {
+    color: clr(neutral, "000", light);
+    width: 80%;
+    margin-inline: auto;
+    background-color: $color-background-default;
+  }
+}

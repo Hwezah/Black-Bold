@@ -3,6 +3,11 @@
 @use "typography" as *;
 @use "sizes" as *;
 
+// Color-Generator //
+
+$active-theme: $light;
+$enable-media-query-dark-mode: false;
+
 @function clr($color, $shade, $scheme: $active-theme) {
   $map: null;
   @if $scheme == "light" {
@@ -22,6 +27,19 @@
   }
 }
 
+@each $color, $shade-map in $active-theme {
+  @each $shade, $value in $shade-map {
+    .clr-#{$color}-#{$shade} {
+      color: var(--#{$color}-#{$shade});
+    }
+    .bg-#{$color}-#{$shade} {
+      background-color: var(--#{$color}-#{$shade});
+    }
+  }
+}
+
+// Font-size-Generator //
+
 @function fs($font-size) {
   @if map.has-key($font-sizes, $font-size) {
     @return map.get($font-sizes, $font-size);
@@ -35,5 +53,15 @@
     @return map.get($sizes, $size);
   } @else {
     @error '$sizes does not have that size!';
+  }
+}
+
+@each $screen-size, $size-map in $font-sizes {
+  @each $size-name, $size-value in $size-map {
+    @if $screen-size == small {
+      .fs-#{$size-name} {
+        font-size: var(--fs-#{$size-name});
+      }
+    }
   }
 }

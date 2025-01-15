@@ -1,4 +1,4 @@
-$-ff-sans: system-ui, sans-serif;
+$-ff-sans: "Poppins", sans-serif;
 $-ff-serif: serif;
 
 $font-family-base: $-ff-sans;
@@ -35,10 +35,22 @@ $font-size-700: var(--fs-700);
 $font-size-800: var(--fs-800);
 $font-size-900: var(--fs-900);
 
+$-fw-200: 200;
+$-fw-300: 300;
 $-fw-400: 400;
 $-fw-500: 500;
 $-fw-700: 700;
 
-$font-weight-default: $-fw-400;
+$font-weight-default: $-fw-200;
 $font-weight-semi-bold: $-fw-500;
 $font-weight-bold: $-fw-700;
+
+h2 {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-700;
+}
+h3 {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-500;
+  line-height: 1.2;
+}

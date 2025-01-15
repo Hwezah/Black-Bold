@@ -10,8 +10,8 @@ $-clr-gray-700: hsl(0 0% 30%);
 $-clr-gray-800: hsl(0 0% 17.5%);
 $-clr-gray-900: hsl(0 0% 7.5%);
 $-clr-black: hsl(0 0% 0%);
-$-clr-orange-100: hsl(24 75% 95%);
-$-clr-orange-200: hsl(24 75% 82.5%);
+$-clr-orange-100: #f0e7e2;
+$-clr-orange-200: hsl(24, 78%, 85%);
 $-clr-orange-300: hsl(24 75% 70%);
 $-clr-orange-400: hsl(24 75% 60%);
 $-clr-orange-500: hsl(24 75% 50%);
@@ -125,7 +125,7 @@ $-clr-deeppink-400: hsl(336 75% 60%);
 $-clr-deeppink-500: hsl(336 75% 50%);
 $-clr-deeppink-600: hsl(336 75% 40%);
 $-clr-deeppink-700: hsl(336 75% 30%);
-$-clr-deeppink-800: hsl(336 75% 17.5%);
+$-clr-deeppink-800: #62232c;
 $-clr-deeppink-900: hsl(336 75% 7.5%);
 $-clr-red-100: hsl(0 75% 95%);
 $-clr-red-200: hsl(0 75% 82.5%);
@@ -136,6 +136,18 @@ $-clr-red-600: hsl(0 75% 40%);
 $-clr-red-700: hsl(0 75% 30%);
 $-clr-red-800: hsl(0 75% 17.5%);
 $-clr-red-900: hsl(0 75% 7.5%);
+
+// $cocoa-bean: #3e1c1a;
+// $spicy-mix: #814d42;
+// $copper-rose: #976862;
+// $albescent-white: #f3dccf;
+// $irish-coffee: #6b2e2a;
+// $brandy-rose: #b48a78;
+// $thatch: #b99b96;
+// $bazaar: #998887;
+// $congo-brown: #683c44;
+// $vanilla: #d2b4a3;
+// $button-main: #de816f
 
 $light: (
   "neutral": (
@@ -163,15 +175,15 @@ $light: (
     "900": $-clr-deeppink-900,
   ),
   "primary": (
-    "100": $-clr-skyblue-100,
-    "200": $-clr-skyblue-200,
-    "300": $-clr-skyblue-300,
-    "400": $-clr-skyblue-400,
-    "500": $-clr-skyblue-500,
-    "600": $-clr-skyblue-600,
-    "700": $-clr-skyblue-700,
-    "800": $-clr-skyblue-800,
-    "900": $-clr-skyblue-900,
+    "100": $-clr-orange-100,
+    "200": $-clr-orange-200,
+    "300": $-clr-orange-300,
+    "400": $-clr-orange-400,
+    "500": $-clr-orange-500,
+    "600": $-clr-orange-600,
+    "700": $-clr-orange-700,
+    "800": $-clr-orange-800,
+    "900": $-clr-orange-900,
   ),
 );
 
@@ -201,19 +213,20 @@ $dark: (
     "100": $-clr-deeppink-100,
   ),
   "primary": (
-    "900": $-clr-skyblue-900,
-    "800": $-clr-skyblue-800,
-    "700": $-clr-skyblue-700,
-    "600": $-clr-skyblue-600,
-    "500": $-clr-skyblue-500,
-    "400": $-clr-skyblue-400,
-    "300": $-clr-skyblue-300,
-    "200": $-clr-skyblue-200,
     "100": $-clr-skyblue-100,
+    "200": $-clr-skyblue-200,
+    "300": $-clr-skyblue-300,
+    "400": $-clr-skyblue-400,
+    "500": $-clr-skyblue-500,
+    "600": $-clr-skyblue-600,
+    "700": $-clr-skyblue-700,
+    "800": $-clr-skyblue-800,
+    "900": $-clr-skyblue-900,
   ),
 );
 
 // contextual color tokens
+
 $color-neutral-000: var(--neutral-000);
 $color-neutral-100: var(--neutral-100);
 $color-neutral-200: var(--neutral-200);

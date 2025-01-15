@@ -5,3 +5,6 @@
   gap: var(--grid-gap, $grid-gap);
   grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
 }
+.mx-auto {
+  align-items: center;
+}

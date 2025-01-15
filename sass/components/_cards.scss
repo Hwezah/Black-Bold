@@ -3,7 +3,7 @@
 .card {
   display: grid;
   gap: $card-flow-spacing;
-  padding: $card-padding;
+  padding: $size-13 $card-padding $size-8;
   background-color: $card-background-default;
   font-family: $card-font-family;
   color: $card-color-default;

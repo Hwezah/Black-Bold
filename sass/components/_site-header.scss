@@ -1,18 +1,18 @@
 @use "../abstracts" as *;
 
 .site-header {
+  height: 100vh;
+  // padding-inline: calc($container-min-margin-inline) * 3;
   color: $site-header-color;
   background-color: $site-header-background-color;
-  padding: $site-header-padding;
+  // padding: $site-header-padding;
 
-  &__inner {
-    display: flex;
-    gap: $size-4;
-    align-items: $site-header-alignment;
-    justify-content: $site-header-jusitifcation-small-screens;
+  background-image: url(../public/spa-imgs/pexels-shvets-production-6984583.jpg);
+  background-position: bottom center;
+  // filter: grayscale(100%);
+  background-size: cover;
 
-    @include mq(medium) {
-      justify-content: $site-header-jusitifcation-large-screens;
-    }
+  @include mq(medium) {
+    justify-content: $site-header-jusitifcation-large-screens;
   }
 }

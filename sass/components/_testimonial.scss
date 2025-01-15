@@ -1,0 +1,75 @@
+@use "../abstracts" as *;
+
+.section-testimonial {
+  background-color: #f1ece975;
+  padding-block-start: $section-padding-block;
+  // background-image: url(../public/spa-imgs/Sudea.jpg);
+
+  &__text {
+    max-width: 50ch;
+    margin-inline: auto;
+    p {
+      color: clr(neutral, "400", "dark");
+      padding-block: $size-8;
+    }
+  }
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  // background-color: #ffffff;
+  width: 65%;
+  position: relative;
+}
+
+.testimonial::before {
+  content: "\201C";
+  position: absolute;
+  top: -5.7rem;
+  left: -6.8rem;
+  line-height: 1;
+  font-size: 20rem;
+  font-family: inherit;
+  color: var(--color-primary);
+  z-index: -1;
+}
+
+.testimonial__header {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+  margin-bottom: 3.5rem;
+  color: #666;
+}
+
+.testimonial__author {
+  margin-left: 3rem;
+  font-style: normal;
+
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+
+  column-gap: 2rem;
+}
+
+.testimonial__photo {
+  height: 6.7rem;
+  width: 8rem;
+  grid-row: 1 / span 2;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial__name {
+  font-size: size-10;
+  font-weight: 500;
+  align-self: end;
+  margin: 0;
+}
+
+.testimonial__location {
+  font-size: size-2;
+}

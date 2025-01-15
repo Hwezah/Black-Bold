@@ -26,11 +26,12 @@
   }
 
   &[data-type="primary"] {
-    background-color: $button-primary-background;
+    background-color: none;
     color: $button-primary-color;
+    outline: 3px solid $button-primary-background;
 
     &:is(:hover, :focus) {
-      background-color: $button-primary-background-hover;
+      background-color: $button-accent-background;
       color: $button-primary-color-hover;
     }
   }

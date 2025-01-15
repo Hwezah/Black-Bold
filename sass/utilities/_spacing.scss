@@ -4,8 +4,11 @@
   padding-block: $section-padding-block;
 }
 
-.mx-auto {
-  margin-inline: auto;
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 2em);
+}
+.flow-2 > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 0.5em);
 }
 
 @each $size-name, $size-value in $sizes {

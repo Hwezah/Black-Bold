@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+.site-values {
+  background-color: $color-background-default;
+  &__bg {
+    background-image: url(../public/spa-imgs/Annotation.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__text {
+    margin-inline: auto;
+    max-width: 50ch;
+  }
+}

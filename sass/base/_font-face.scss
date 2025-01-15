@@ -1,28 +1,258 @@
+// @font-face {
+//   font-family: "Alegreya SC";
+//   font-weight: 700;
+//   font-display: swap;
+//   src: url("/fonts/alegreyasc-bold-webfont.woff2") format("woff2"),
+//     url("/fonts/alegreyasc-bold-webfont.woff") format("woff");
+// }
+// @font-face {
+//   font-family: "Source Sans Pro";
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url("/fonts/sourcesanspro-regular-webfont.woff2") format("woff2"),
+//     url("/fonts/sourcesanspro-regular-webfont.woff") format("woff");
+// }
+// @font-face {
+//   font-family: "Source Sans Pro";
+//   font-weight: 500;
+//   font-display: swap;
+//   src: url("/fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"),
+//     url("/fonts/sourcesanspro-semibold-webfont.woff") format("woff");
+// }
+// @font-face {
+//   font-family: "Source Sans Pro";
+//   font-weight: 700;
+//   font-display: swap;
+//   src: url("/fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),
+//     url("/fonts/sourcesanspro-bold-webfont.woff") format("woff");
+// }
 @font-face {
-  font-family: "Alegreya SC";
-  font-weight: 700;
-  font-display: swap;
-  src: url("/fonts/alegreyasc-bold-webfont.woff2") format("woff2"),
-    url("/fonts/alegreyasc-bold-webfont.woff") format("woff");
+  font-family: "Cronos Pro Caption";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Caption"),
+    url("Cronos-Pro-Caption_12437.woff") format("woff");
 }
+
 @font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/sourcesanspro-regular-webfont.woff2") format("woff2"),
-    url("/fonts/sourcesanspro-regular-webfont.woff") format("woff");
+  font-family: "Cronos Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Display"),
+    url("Cronos-Pro-Display_12439.woff") format("woff");
 }
+
 @font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 500;
-  font-display: swap;
-  src: url("/fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"),
-    url("/fonts/sourcesanspro-semibold-webfont.woff") format("woff");
+  font-family: "Cronos Pro Subhead";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Subhead"),
+    url("Cronos-Pro-Subhead_12458.woff") format("woff");
 }
+
 @font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 700;
-  font-display: swap;
-  src: url("/fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),
-    url("/fonts/sourcesanspro-bold-webfont.woff") format("woff");
+  font-family: "Cronos Pro Display Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Display Italic"),
+    url("Cronos-Pro-Display-Italic_12438.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Italic"),
+    url("Cronos-Pro-Italic_12440.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Subhead Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Subhead Italic"),
+    url("Cronos-Pro-Subhead-Italic_12457.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Light Caption";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Light Caption"),
+    url("Cronos-Pro-Light-Caption_12442.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Light Subhead";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Light Subhead"),
+    url("Cronos-Pro-Light-Subhead_12447.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Light"),
+    url("Cronos-Pro-Light_12448.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Light Caption Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Light Caption Italic"),
+    url("Cronos-Pro-Light-Caption-Italic_12441.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Light Display Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Light Display Italic"),
+    url("Cronos-Pro-Light-Display-Italic_12443.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Light Italic"),
+    url("Cronos-Pro-Light-Italic_12445.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Light Subhead Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Light Subhead Italic"),
+    url("Cronos-Pro-Light-Subhead-Italic_12446.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Semibold Caption";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Semibold Caption"),
+    url("Cronos-Pro-Semibold-Caption_12450.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Semibold Display";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Semibold Display"),
+    url("Cronos-Pro-Semibold-Display_12452.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Semibold Subhead";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Semibold Subhead"),
+    url("Cronos-Pro-Semibold-Subhead_12455.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Semibold"),
+    url("Cronos-Pro-Semibold_12456.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Semibold Caption Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Semibold Caption Italic"),
+    url("Cronos-Pro-Semibold-Caption-Italic_12449.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Semibold Display Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Semibold Display Italic"),
+    url("Cronos-Pro-Semibold-Display-Italic_12451.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Semibold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Semibold Italic"),
+    url("Cronos-Pro-Semibold-Italic_12453.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Semibold Subhead Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Semibold Subhead Italic"),
+    url("Cronos-Pro-Semibold-Subhead-Italic_12454.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Bold Caption";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Bold Caption"),
+    url("Cronos-Pro-Bold-Caption_12429.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Bold Display";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Bold Display"),
+    url("Cronos-Pro-Bold-Display_12431.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Bold Subhead";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Bold Subhead"),
+    url("Cronos-Pro-Bold-Subhead_12434.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Bold Caption Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Bold Caption Italic"),
+    url("Cronos-Pro-Bold-Caption-Italic_12428.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Bold Display Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Bold Display Italic"),
+    url("Cronos-Pro-Bold-Display-Italic_12430.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Bold Subhead Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Bold Subhead Italic"),
+    url("Cronos-Pro-Bold-Subhead-Italic_12433.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Regular"), url("Cronos-Pro_12459.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cronos Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cronos Pro Bold"),
+    url("Cronos-Pro-Bold_12435.woff") format("woff");
 }

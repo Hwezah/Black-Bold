@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .container {
-  --padding: #{$container-min-margin-inline} * 2;
+  --padding: #{$container-min-margin-inline};
   --max-width: #{$container-max-width};
 
   width: min(100% - var(--padding), var(--max-width));
@@ -13,6 +13,8 @@
 }
 .container[data-type="wide"] {
   --max-width: #{$container-max-width-wide};
+  // --padding: #{$container-min-margin-inline};
+  // padding-inline: 0;
 }
 .container[data-type="full-bleed"] {
   --max-width: 100%;

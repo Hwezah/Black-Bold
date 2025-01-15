@@ -7,12 +7,33 @@ body {
   color: $body-text-color;
   background-color: $body-background-color;
   line-height: $body-line-height;
+  cursor: none;
 }
 
 a {
   color: $link-color;
+  cursor: none;
 }
 
 a:is(:hover, :focus) {
   color: $link-color-hover;
+  cursor: none;
+}
+// .section-heading {
+//   font-size: $site-section-heading-font-size;
+//   color: clr(accent, "700", light);
+//   font-weight: $site-section-heading-font-weight;
+// }
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: deeppink;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  transition: top 0.05s ease, left 0.05s ease;
 }
