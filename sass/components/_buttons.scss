@@ -27,13 +27,13 @@
   }
 
   &[data-type="primary"] {
-    background-color: none;
-    color: $button-primary-color;
-    outline: 3px solid $button-primary-background;
+    background-color: $button-primary-background;
+    color: $button-primary-color-hover;
 
     &:is(:hover, :focus) {
-      background-color: $button-accent-background;
-      color: $button-primary-color-hover;
+      background-color: transparent;
+      color: $button-primary-color;
+      outline: 3px solid $button-primary-background;
     }
   }
 
@@ -44,6 +44,6 @@
     margin-left: $size-2;
   }
   &:is(:hover, :focus) svg {
-    fill: rgb(255, 255, 255); /* Change SVG color specifically */
+    fill: $button-primary-background; /* Change SVG color specifically */
   }
 }
