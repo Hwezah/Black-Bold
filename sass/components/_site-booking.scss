@@ -3,10 +3,49 @@
   background-image: url(../public/spa-imgs/pexels-eva-bronzini-6140925.jpg);
   background-size: cover;
   background-position: center;
-  &__text {
-    color: clr(neutral, "000", light);
+
+  &__form {
+    color: $color-primary-900;
     width: 80%;
     margin-inline: auto;
     background-color: $color-background-default;
   }
+}
+
+.form-container {
+  background-color: $button-primary-background;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: $font-size-500;
+  color: $color-primary-900;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: $color-primary-900;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: none;
 }
