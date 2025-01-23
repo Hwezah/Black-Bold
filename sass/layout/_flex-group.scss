@@ -5,24 +5,28 @@
   flex-wrap: wrap;
   column-gap: var(--flex-column-gap, $flex-group-gap);
   row-gap: var(--flex-row-gap, calc($flex-group-gap / 2));
-  &__col-gap-tight {
-    --flex-column-gap: 1rem;
-  }
-  &__col-gap-tighter {
-    --flex-column-gap: 0.5rem;
-  }
   // width: fit-content;
 }
+.flex-col-gap-lose {
+  --flex-column-gap: 3rem;
+}
 
-.flex-alignment {
+.flex-col-gap-tight {
+  --flex-column-gap: 1rem;
+}
+.flex-col-gap-tighter {
+  --flex-column-gap: 0.5rem;
+}
+
+.flex-center {
   justify-content: center;
   align-items: center;
 }
 
-.flex-alignment2 {
+.flex-space-between {
   justify-content: space-between;
 }
-.flex-wrap {
+.flex-nowrap {
   flex-wrap: nowrap;
 }
 // .x {

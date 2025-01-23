@@ -59,3 +59,9 @@
     }
   }
 }
+.max-content {
+  min-width: max-content;
+}
+.min-content {
+  max-width: min-content;
+}

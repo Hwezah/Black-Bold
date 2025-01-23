@@ -30,3 +30,23 @@
     text-align: center;
   }
 }
+
+.treatment-process-footer {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  olumn-gap: $size-10;
+}
+
+.treatment-process-footer::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #a3a1a1;
+}
