@@ -6,15 +6,15 @@
   background-position: center;
 
   &__form {
-    color: $color-neutral-000;
+    color: $accent-background-color;
     width: 80%;
     margin-inline: auto;
-    background-color: #142127;
+    background-color: $color-neutral-1000;
   }
 }
 
 .form-container {
-  background-color: #1a2930;
+  background-color: #afafaa;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -26,7 +26,7 @@ label {
   display: block;
   margin-bottom: $size-2;
   font-size: $font-size-500;
-  color: $color-neutral-000;
+  color: $accent-background-color;
   font-family: $font-family-base;
   font-weight: 300;
 }
@@ -34,7 +34,7 @@ label {
 input,
 select,
 textarea {
-  background-color: #29373d;
+  background-color: #888885;
   width: 100%;
   padding: 10px;
   font-size: 14px;

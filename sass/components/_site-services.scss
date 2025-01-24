@@ -16,9 +16,9 @@
   position: relative;
 }
 .price-tier {
-  color: $color-neutral-000;
+  color: $accent-background-color;
   min-width: 10rem;
-  background-color: #142127;
+  background-color: $color-neutral-000;
   ul {
     padding-inline-start: 0.9rem;
   }

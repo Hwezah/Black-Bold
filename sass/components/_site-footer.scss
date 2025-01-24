@@ -2,11 +2,12 @@
 
 .site-footer {
   background-color: $color-primary-900;
-  background-color: #142127;
+  background-color: #888885;
   a {
-    color: $footer-link-color;
+    color: $color-primary-900;
     text-decoration: $footer-link-text-decoration;
     font-family: $footer-link-font-family;
+    font-weight: 700;
     letter-spacing: $letter-spacing-loose;
     display: inline-block;
     transition: all 0.2s ease;
@@ -16,11 +17,14 @@
     }
   }
   &__text {
+    color: $color-primary-900;
+    font-weight: 500;
     max-width: 60ch;
   }
 }
 
 .footer-nav__socials ul {
+  fill: $color-primary-900;
   justify-content: flex-start;
   column-gap: calc($flex-group-gap / 2);
 }
