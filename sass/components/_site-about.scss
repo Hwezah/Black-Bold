@@ -2,15 +2,12 @@
 
 .about {
   background-color: $color-neutral-1000;
-  padding-block-start: $section-padding-block;
-  // background-image: url(../public/spa-imgs/Sudea.jpg);
-
   &__text {
     max-width: 50ch;
     margin-inline: auto;
     p {
       color: clr(neutral, "400", "dark");
-      padding-block: $size-8;
+      padding-block: $size-4;
     }
   }
 }
