@@ -2,8 +2,11 @@
 @use "../layout" as *;
 
 .site-services {
-  background-color: $color-background-default;
-  // background-color: #ffffff;
+  background-image: url("../public/spa-imgs/spa/pexels-anna-shvets-3851332-2.jpg");
+  // background-color: $color-background-default;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-block-start: $section-padding-block;
 
   &__text {
