@@ -1,8 +1,8 @@
 $-ff-sans: "Poppins", sans-serif;
-$-ff-serif: serif;
+$-ff-serif: "Montserrat";
 
 $font-family-base: $-ff-sans;
-$font-family-accent: $-ff-sans;
+$font-family-accent: $-ff-serif;
 
 $font-sizes: (
   "small": (
@@ -48,6 +48,8 @@ $font-weight-bold: $-fw-700;
 h2 {
   font-weight: $font-weight-bold;
   font-size: $font-size-700;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
 }
 h3 {
   font-weight: $font-weight-semi-bold;

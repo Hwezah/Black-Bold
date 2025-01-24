@@ -15,8 +15,9 @@
     text-decoration: $navigation-link-text-decoration;
     padding-bottom: $size-1;
     transition: all 0.2s ease;
+    display: inline-block;
     &:is(:hover, :focus) {
-      color: $navigation-color-hover;
+      transform: scale(1.2);
     }
   }
 }
