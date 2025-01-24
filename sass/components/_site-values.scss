@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 .site-values {
-  background-color: $color-background-default;
+  background-color: $color-neutral-1000;
   &__bg {
     background-image: url(../public/spa-imgs/Annotation.jpg);
     background-size: cover;

@@ -2,10 +2,8 @@
 @use "../layout" as *;
 
 .site-services {
-  background-color: $color-background-default;
-  // background-color: #ffffff;
+  background-color: $color-neutral-1000;
   padding-block-start: $section-padding-block;
-
   &__text {
     span {
       display: block;
@@ -16,14 +14,12 @@
   min-width: max-content;
   z-index: 99;
   position: relative;
-  // transform: translateX(20%);
 }
 .price-tier {
+  color: $color-neutral-000;
   min-width: 10rem;
-  background-color: #ffffff;
-  // background-color: rgb(198, 221, 213);
+  background-color: #142127;
   ul {
-    // display: block;
     padding-inline-start: 0.9rem;
   }
   .price {

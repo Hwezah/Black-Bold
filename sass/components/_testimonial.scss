@@ -1,9 +1,8 @@
 @use "../abstracts" as *;
 
 .section-testimonial {
-  background-color: #f1ece975;
+  background-color: $color-neutral-1000;
   padding-block-start: $section-padding-block;
-  // background-image: url(../public/spa-imgs/Sudea.jpg);
 
   &__text {
     max-width: 50ch;

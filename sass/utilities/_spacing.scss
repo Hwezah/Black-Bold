@@ -8,6 +8,9 @@
   margin-top: var(--flow-spacer, 2em);
 }
 .flow-2 > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
+.flow-3 > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 0.5em);
 }
 

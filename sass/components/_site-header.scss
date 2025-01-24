@@ -1,17 +1,12 @@
 @use "../abstracts" as *;
 
 .site-header {
+  background-color: $color-neutral-1000;
   height: 100vh;
-  // padding-inline: calc($container-min-margin-inline) * 3;
   color: $site-header-color;
-  background-color: $site-header-background-color;
-  // padding: $site-header-padding;
-
   background-image: url(../public/spa-imgs/pexels-shvets-production-6984583.jpg);
   background-position: bottom center;
-  // filter: grayscale(100%);
   background-size: cover;
-
   @include mq(medium) {
     justify-content: $site-header-jusitifcation-large-screens;
   }

@@ -1,20 +1,20 @@
 @use "../abstracts" as *;
 .site-booking {
+  background-color: $color-neutral-1000;
   background-image: url(../public/spa-imgs/pexels-eva-bronzini-6140925.jpg);
   background-size: cover;
   background-position: center;
 
   &__form {
-    color: $color-primary-900;
+    color: $color-neutral-000;
     width: 80%;
     margin-inline: auto;
-    background-color: $color-background-default;
+    background-color: #142127;
   }
 }
 
 .form-container {
-  background-color: $button-primary-background;
-  background-color: rgb(255, 255, 255);
+  background-color: #1a2930;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -24,20 +24,23 @@
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: $size-2;
   font-size: $font-size-500;
-  color: $color-primary-900;
+  color: $color-neutral-000;
+  font-family: $font-family-base;
+  font-weight: 300;
 }
 
 input,
+select,
 textarea {
+  background-color: #29373d;
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
   font-size: 14px;
-  color: $color-primary-900;
+  color: $color-neutral-000;
   transition: border-color 0.3s ease;
+  border: none;
 }
 
 input:focus,
