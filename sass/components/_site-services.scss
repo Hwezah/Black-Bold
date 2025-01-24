@@ -3,14 +3,11 @@
 
 .site-services {
   // background-color: $color-background-default;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $color-neutral-1000;
-  padding-block-start: $section-padding-block;
-
-main
-  &__text {
+  main &__text {
     padding-block-start: $section-padding-block;
     span {
       display: block;
