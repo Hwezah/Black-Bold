@@ -2,12 +2,25 @@
 @use "../layout" as *;
 
 .site-services {
+  // background-color: $color-background-default;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: $color-neutral-1000;
   padding-block-start: $section-padding-block;
+
+main
   &__text {
+    padding-block-start: $section-padding-block;
     span {
       display: block;
     }
+  }
+  &__box-1 {
+    background-image: url("../public/spa-imgs/spa/pexels-anna-shvets-3851332-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 .price-tiers {
