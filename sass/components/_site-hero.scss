@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.site-hero {
+  background-color: $color-neutral-1000;
+  height: 100vh;
+  color: $site-header-color;
+  // background-image: url(../public/spa-imgs/spa/pexels-angela-roma-7479812.jpg);
+  background-color: transparent;
+  @include mq(medium) {
+    justify-content: $site-header-jusitifcation-large-screens;
+  }
+  &__text {
+    max-width: 40ch;
+  }
+}

@@ -1,13 +1,48 @@
 @use "../abstracts" as *;
+@use "../layout" as *;
 
 .site-header {
-  background-color: $color-neutral-1000;
-  height: 100vh;
-  color: $site-header-color;
-  background-image: url(../public/spa-imgs/pexels-shvets-production-6984583.jpg);
+  background-image: url(../public/spa-imgs/spa/masking-2-lazy-2.jpg);
   background-position: bottom center;
   background-size: cover;
-  @include mq(medium) {
-    justify-content: $site-header-jusitifcation-large-screens;
+}
+
+.nav {
+  --flex-column-gap: #{$navigation-gap};
+  list-style: none;
+  font-family: $navigation-font-family;
+  font-weight: $navigation-font-weight;
+}
+
+.nav-main {
+  width: 100%;
+  a {
+    color: $navigation-color;
+    text-decoration: $navigation-link-text-decoration;
+    padding-bottom: $size-1;
+    transition: all 0.2s ease;
+    display: inline-block;
+    &:is(:hover, :focus) {
+      transform: scale(1.2);
+    }
   }
+}
+
+.nav-main.sticky {
+  max-width: $container-max-width-wide;
+  // width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  padding: $size-6;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+section {
+  transition: transform 1s, opacity 1s;
 }
