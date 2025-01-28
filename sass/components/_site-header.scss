@@ -17,9 +17,9 @@
 .nav-main {
   width: 100%;
   a {
+    cursor: pointer;
     color: $navigation-color;
     text-decoration: $navigation-link-text-decoration;
-    padding-bottom: $size-1;
     transition: all 0.2s ease;
     display: inline-block;
     &:is(:hover, :focus) {
@@ -45,4 +45,8 @@
 
 section {
   transition: transform 1s, opacity 1s;
+}
+.logo {
+  height: 36px;
+  width: 36px;
 }

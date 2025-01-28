@@ -11,8 +11,12 @@
 }
 
 img,
-picture,
-svg {
-  display: block;
+picture {
   max-width: 100%;
+}
+svg {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  vertical-align: middle;
 }
