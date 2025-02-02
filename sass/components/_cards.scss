@@ -4,10 +4,10 @@
   display: grid;
   gap: $card-flow-spacing;
   padding: $size-13 $card-padding $size-8;
-  // background-color: $card-background-default;
-  background-color: $color-neutral-000;
+  background-color: $card-background-default;
+
   font-family: $card-font-family;
-  color: $accent-background-color;
+  color: $card-color-default;
   line-height: $card-line-height;
   box-shadow: $card-shadow;
   border-radius: $card-border-radius;

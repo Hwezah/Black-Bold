@@ -6,7 +6,6 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: $color-neutral-1000;
   main &__text {
     padding-block-start: $section-padding-block;
     span {
@@ -19,22 +18,14 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  &.container {
+    padding-block-start: 0;
+  }
 }
 .price-tiers {
   min-width: max-content;
   z-index: 99;
   position: relative;
-}
-.price-tier {
-  color: $accent-background-color;
-  min-width: 10rem;
-  background-color: $color-neutral-000;
-  ul {
-    padding-inline-start: 0.9rem;
-  }
-  .price {
-    text-align: center;
-  }
 }
 
 .treatment-process-footer {
@@ -43,10 +34,15 @@
   align-items: center;
   position: relative;
   column-gap: $size-10;
+  &.container {
+    padding-top: 0;
+    padding-bottom: $size-6;
+  }
 }
 
 .treatment-process-footer::after {
   content: "";
+  display: inline-block;
   position: absolute;
   margin: auto;
   right: 0;
@@ -60,3 +56,6 @@
 //   position: absolute;
 //   top: 8rem;
 // }
+.site-services .site-services__box-1 {
+  color: #535353;
+}

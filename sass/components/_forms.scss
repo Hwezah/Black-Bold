@@ -1,29 +1,69 @@
 @use "../abstracts" as *;
 
-// .contact-form {
-//   .form-group {
-//     display: grid;
-//   }
-// }
-// label {
-//   color: $form-label-color;
-//   font-family: $form-label-font-family;
-//   font-weight: $form-label-font-weight;
-//   font-size: $form-label-font-size;
-// }
+.contact-form {
+  label {
+    color: $form-label-color;
+    font-family: $form-label-font-family;
+    font-weight: $form-label-font-weight;
+    font-size: $form-label-font-size;
+  }
 
-// input:not(.button) {
-//   font-size: $form-input-font-size;
-//   font-weight: $form-input-font-weight;
-//   color: $form-input-color;
-//   background-color: $form-input-background-color;
-//   padding: $form-input-padding;
-//   border: $form-input-border-default;
-//   border-radius: $form-input-border-radius;
-// }
+  input:not(.button) {
+    font-size: $form-input-font-size;
+    font-weight: $form-input-font-weight;
+    color: $form-input-color;
+    background-color: $form-input-background-color;
+    padding: $form-input-padding;
+    min-width: $size-19;
+    border: none;
+    //   border: $form-input-border-default;
+    border-radius: $form-input-border-radius;
+  }
 
-// ::placeholder {
-//   color: $form-placeholder-color;
-//   font-weight: $form-placeholder-font-weight;
-//   font-family: $form-placeholder-font-family;
-// }
+  ::placeholder {
+    color: $form-placeholder-color;
+    font-weight: $form-placeholder-font-weight;
+    font-family: $form-placeholder-font-family;
+  }
+  .form-container {
+    background-color: #afafaa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  label {
+    display: block;
+    margin-bottom: $size-2;
+    font-size: $font-size-500;
+    color: $form-label-color;
+    font-family: $font-family-base;
+    font-weight: 500;
+  }
+
+  .form-group {
+    padding-block-end: $size-4;
+  }
+  .form-group__2 a {
+  }
+  // input,
+  // select,
+  // textarea {
+  //   background-color: #888885;
+  //   width: 100%;
+  //   padding: 14px;
+  //   font-size: 14px;
+  //   color: $body-text-color;
+  //   transition: border-color 0.3s ease;
+  //   border: none;
+  // }
+
+  input:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  textarea {
+    resize: none;
+  }
+}

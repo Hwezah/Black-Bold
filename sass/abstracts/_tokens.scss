@@ -3,8 +3,8 @@
 @use "sizes" as *;
 
 // Contextual
-$color-text-default: $color-primary-900;
-$color-background-default: #f1ece9;
+$color-text-default: $color-neutral-000;
+$color-background-default: $color-neutral-400;
 $color-text-interactive-default: $color-accent-400;
 $color-text-interactive-hover: $color-accent-500;
 
@@ -60,6 +60,7 @@ $heading-3-color: $heading-color-default;
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 
+$hero-color: #535353;
 $hero-padding-block: clamp(15rem, 15vh, 20rem);
 $section-padding-block: clamp(5rem, 10vh, 6rem);
 
@@ -67,10 +68,13 @@ $container-min-margin-inline: $size-4;
 $container-max-width: 80rem;
 $container-max-width-narrow: 70rem;
 $container-max-width-wide: 90rem;
+$container-background-color: $color-neutral-400;
+$container-padding: $size-11;
+$container-color: $color-neutral-300;
 
 // site header
 $site-header-background-color: $color-primary-100;
-$site-header-color: $color-neutral-000;
+$site-header-color: #535353;
 $site-header-padding: $size-8 0;
 $site-header-margin: 0;
 $site-header-jusitifcation-small-screens: center;
@@ -110,18 +114,18 @@ $button-accent-color: $color-neutral-100;
 $button-accent-background: $color-accent-900;
 $button-accent-color-hover: $color-neutral-100;
 $button-accent-background-hover: $color-accent-700;
-$button-primary-color: $color-neutral-000;
+$button-primary-color: $color-neutral-300;
 // $button-primary-background: $color-primary-900;
-$button-primary-background: #142127;
-$button-primary-color-hover: $color-neutral-100;
-$button-primary-background-hover: $color-primary-800;
+$button-primary-background: $color-neutral-700;
+$button-primary-color-hover: $color-neutral-300;
+$button-primary-background-hover: $color-neutral-000;
 
 // cards
 $card-flow-spacing: $size-2;
 $card-padding: $size-8;
 $card-shadow: $box-shadow-3;
 $card-border-radius: 0;
-$card-background-default: $color-neutral-000;
+$card-background-default: $color-neutral-400;
 $card-color-default: $color-neutral-000;
 $card-font-family: $body-font-family;
 $card-line-height: 1.25;
@@ -138,11 +142,11 @@ $form-input-color: $body-text-color;
 $form-input-font-family: $body-font-family;
 $form-input-font-weight: $font-weight-semi-bold;
 $form-input-font-size: $body-font-size;
-$form-input-background-color: $color-neutral-100;
+$form-input-background-color: $color-neutral-700;
 $form-input-border-default: 3px solid $color-primary-200;
 $form-input-border-focus: 3px solid $color-primary-400;
 $form-input-padding: $size-3;
-$form-input-border-radius: $border-radius-1;
+$form-input-border-radius: $border-radius-flat;
 
 $form-placeholder-color: $color-primary-300;
 $form-placeholder-font-family: $form-input-font-family;
@@ -152,5 +156,5 @@ $form-placeholder-font-size: $body-font-size;
 $form-group-spacing: 0.5rem;
 
 // $accent-background-color: #142127;
-$accent-background-color: #231f20;
-$color-neutral-1000: #e9e9e1;
+// $accent-background-color: #231f20;
+// $color-neutral-1000: #e9e9e1;
