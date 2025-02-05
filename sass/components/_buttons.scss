@@ -28,13 +28,15 @@
   }
 
   &[data-type="primary"] {
-    background-color: $accent-background-color;
+    background-color: $button-primary-background;
     color: $button-primary-color;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 
     &:is(:hover, :focus) {
+      border: 2px solid $button-primary-color-hover;
+      color: $button-primary-color-hover;
       background-color: transparent;
-      color: $button-primary-background;
-      border: 3px solid $button-primary-background;
     }
   }
 

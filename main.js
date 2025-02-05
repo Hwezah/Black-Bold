@@ -1,4 +1,4 @@
-const header = document.querySelector(".site-header");
+const hero = document.querySelector(".site-hero");
 const navMain = document.querySelector(".nav-main");
 const allSections = document.querySelectorAll("section");
 
@@ -27,11 +27,11 @@ const stickyNav = function (entries) {
 const obsOptions = {
   root: null, // This option specifies the element that is used as the viewport(basis) for checking the visibility of the target element.
   threshold: 0, //This option specifies at what percentage the API will triger the target element(header) to come into view(relative to the root(viewport)).
-  rootMargin: "-120.4px", //helps to create room before the threshold kicks in.
+  rootMargin: "-80px", //helps to create room before the threshold kicks in.
 };
 
 const observer = new IntersectionObserver(stickyNav, obsOptions);
-observer.observe(header);
+observer.observe(hero);
 
 // Smooth scrolling-in of sections!
 // const revealSection = function (entries, observer) {
