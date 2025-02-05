@@ -1,13 +1,8 @@
 @use "../abstracts" as *;
 
 .about {
-  background-color: $color-neutral-1000;
   &__text {
     max-width: 50ch;
     margin-inline: auto;
-    p {
-      color: clr(neutral, "400", "dark");
-      padding-block: $size-4;
-    }
   }
 }
