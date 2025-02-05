@@ -20,5 +20,8 @@ svg {
   width: 24px;
   display: inline-block;
   vertical-align: middle;
-  fill: $color-neutral-000;
+}
+svg.cart {
+  height: 30px;
+  width: 30px;
 }

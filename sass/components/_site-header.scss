@@ -12,10 +12,15 @@
 }
 
 .nav-main {
+  max-width: $container-max-width-wide;
+  padding: $size-6 $size-10;
   width: 100%;
+  background-color: transparent;
+  position: absolute;
+
   a {
     cursor: pointer;
-    color: $navigation-color;
+    color: $color-neutral-000;
     text-decoration: $navigation-link-text-decoration;
     transition: all 0.2s ease;
     display: inline-block;
@@ -26,12 +31,12 @@
 }
 
 .nav-main.sticky {
-  max-width: $container-max-width-wide;
+  // max-width: $container-max-width-wide;
   position: fixed;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: $size-6;
+  // padding: $size-6 $size-10;
 }
 
 .section--hidden {
