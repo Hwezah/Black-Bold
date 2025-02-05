@@ -4,6 +4,7 @@
 
 // Contextual
 $color-text-default: $color-neutral-000;
+$color-text-default-2: #535353;
 $color-background-default: $color-neutral-300;
 $color-text-interactive-default: $color-accent-400;
 $color-text-interactive-hover: $color-accent-500;
@@ -60,7 +61,7 @@ $heading-3-color: $heading-color-default;
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 
-$hero-color: #535353;
+$hero-color: $color-text-default-2;
 $hero-padding-block: clamp(15rem, 15vh, 20rem);
 $section-padding-block: clamp(5rem, 10vh, 6rem);
 
@@ -71,10 +72,11 @@ $container-max-width-wide: 90rem;
 $container-background-color: $color-neutral-400;
 $container-padding: $size-11;
 $container-color: $color-neutral-300;
+$container-color: $color-text-default-2;
 
 // site header
 $site-header-background-color: $color-primary-100;
-$site-header-color: #535353;
+$site-header-color: $color-text-default-2;
 $site-header-padding: $size-8 0;
 $site-header-margin: 0;
 $site-header-jusitifcation-small-screens: center;
