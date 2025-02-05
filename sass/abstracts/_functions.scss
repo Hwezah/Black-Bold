@@ -5,7 +5,7 @@
 
 // Color-Generator //
 
-$active-theme: $light;
+$active-theme: $dark;
 $enable-media-query-dark-mode: false;
 
 @function clr($color, $shade, $scheme: $active-theme) {
