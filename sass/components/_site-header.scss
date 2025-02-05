@@ -1,13 +1,53 @@
 @use "../abstracts" as *;
+@use "../layout" as *;
 
 .site-header {
-  background-color: $color-neutral-1000;
-  height: 100vh;
-  color: $site-header-color;
-  background-image: url(../public/spa-imgs/pexels-shvets-production-6984583.jpg);
-  background-position: bottom center;
-  background-size: cover;
-  @include mq(medium) {
-    justify-content: $site-header-jusitifcation-large-screens;
+}
+
+.nav {
+  --flex-column-gap: #{$navigation-gap};
+  list-style: none;
+  font-family: $navigation-font-family;
+  font-weight: $navigation-font-weight;
+}
+
+.nav-main {
+  max-width: $container-max-width-wide;
+  padding: $size-6 $size-10;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+
+  a {
+    cursor: pointer;
+    color: $color-neutral-000;
+    text-decoration: $navigation-link-text-decoration;
+    transition: all 0.2s ease;
+    display: inline-block;
+    &:is(:hover, :focus) {
+      transform: scale(1.2);
+    }
   }
+}
+
+.nav-main.sticky {
+  // max-width: $container-max-width-wide;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  // padding: $size-6 $size-10;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+section {
+  transition: transform 1s, opacity 1s;
+}
+.logo {
+  height: 36px;
+  width: 36px;
 }
