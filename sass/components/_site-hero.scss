@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.hero {
+  .site-hero {
+    background-image: url(../public/spa-imgs/spa/masking-2-lazy-2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $hero-color;
+    height: 100vh;
+    // background-image: url(../public/spa-imgs/spa/pexels-angela-roma-7479812.jpg);
+    background-color: transparent;
+    @include mq(medium) {
+      justify-content: $site-header-jusitifcation-large-screens;
+    }
+    &__text {
+      max-width: 40ch;
+    }
+  }
+}

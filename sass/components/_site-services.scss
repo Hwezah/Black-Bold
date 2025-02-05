@@ -3,14 +3,10 @@
 
 .site-services {
   // background-color: $color-background-default;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: $color-neutral-1000;
-  padding-block-start: $section-padding-block;
-
-main
-  &__text {
+  main &__text {
     padding-block-start: $section-padding-block;
     span {
       display: block;
@@ -22,22 +18,13 @@ main
     background-size: cover;
     background-repeat: no-repeat;
   }
+  &.container {
+    padding-block-start: 0;
+  }
 }
 .price-tiers {
   min-width: max-content;
-  z-index: 99;
   position: relative;
-}
-.price-tier {
-  color: $accent-background-color;
-  min-width: 10rem;
-  background-color: $color-neutral-000;
-  ul {
-    padding-inline-start: 0.9rem;
-  }
-  .price {
-    text-align: center;
-  }
 }
 
 .treatment-process-footer {
@@ -46,10 +33,15 @@ main
   align-items: center;
   position: relative;
   column-gap: $size-10;
+  &.container {
+    padding-top: 0;
+    padding-bottom: $size-6;
+  }
 }
 
 .treatment-process-footer::after {
   content: "";
+  display: inline-block;
   position: absolute;
   margin: auto;
   right: 0;
@@ -58,4 +50,11 @@ main
   width: 100%;
   height: 1px;
   background-color: #a3a1a1;
+}
+// .site-services__box-2-text {
+//   position: absolute;
+//   top: 8rem;
+// }
+.site-services .site-services__box-1 {
+  color: #535353;
 }
