@@ -1,3 +1,4 @@
+@use "../abstracts" as *;
 *,
 *::before,
 *::after {
@@ -11,8 +12,18 @@
 }
 
 img,
-picture,
-svg {
-  display: block;
+picture {
   max-width: 100%;
+}
+svg {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  // stroke: $color-text-default-2;
+  // fill: $color-neutral-100;
+}
+svg.cart {
+  height: 30px;
+  width: 30px;
 }
