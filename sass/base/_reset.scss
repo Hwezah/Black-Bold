@@ -22,8 +22,12 @@ svg {
   vertical-align: middle;
   // stroke: $color-text-default-2;
   // fill: $color-neutral-100;
-}
-svg.cart {
-  height: 30px;
-  width: 30px;
+  &:has(.cart) {
+    height: 30px;
+    width: 30px;
+  }
+  // &:has(.insta) {
+  //   height: 40px;
+  //   width: 40px;
+  // }
 }
