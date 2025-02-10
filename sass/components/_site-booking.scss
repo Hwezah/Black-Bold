@@ -4,7 +4,8 @@
   background-size: cover;
   background-position: center;
 
-  &__form {
+  & form {
+    justify-content: center;
     background-color: $color-neutral-400;
     color: $color-text-default-2;
     // margin-inline: auto;
