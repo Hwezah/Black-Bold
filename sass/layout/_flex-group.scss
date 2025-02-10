@@ -29,3 +29,9 @@
 .flex-nowrap {
   flex-wrap: nowrap;
 }
+.flex-column {
+  flex-direction: column;
+}
+.flex-around {
+  justify-content: space-around;
+}

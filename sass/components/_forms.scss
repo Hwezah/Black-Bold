@@ -14,10 +14,14 @@
     color: #9b9b9b;
     background-color: $form-input-background-color;
     padding: $form-input-padding;
-    min-width: $size-19;
+    width: 100%;
     border: none;
     //   border: $form-input-border-default;
     border-radius: $form-input-border-radius;
+  }
+  .form-cta {
+    display: inline-block;
+    margin-left: auto;
   }
 
   ::placeholder {
@@ -43,8 +47,7 @@
   .form-group {
     padding-block-end: $size-4;
   }
-  .form-group__2 a {
-  }
+
   // input,
   // select,
   // textarea {

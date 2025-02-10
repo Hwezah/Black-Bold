@@ -62,3 +62,7 @@ h3 {
   font-size: $font-size-500;
   line-height: 1.2;
 }
+p,
+span:not(.heading__primary) {
+  font-weight: $font-weight-semi-bold;
+}
