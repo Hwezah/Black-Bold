@@ -6,8 +6,11 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  main &__text {
+  &__text {
     padding-block-start: $section-padding-block;
+    p {
+      max-width: 50ch;
+    }
     span {
       display: block;
     }
@@ -29,11 +32,12 @@
 }
 
 .treatment-process-footer {
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  padding-inline: $size-8;
   position: relative;
   column-gap: $size-10;
+  p {
+    width: 40ch;
+  }
   &.container {
     padding-top: 0;
     padding-bottom: $size-6;
