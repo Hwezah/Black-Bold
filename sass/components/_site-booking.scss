@@ -3,8 +3,13 @@
   background-image: url(../public/spa-imgs/pexels-eva-bronzini-6140925.jpg);
   background-size: cover;
   background-position: center;
-
   &__form {
+    padding-block: $size-14;
+  }
+
+  & form {
+    padding-inline: $size-11;
+    justify-content: center;
     background-color: $color-neutral-400;
     color: $color-text-default-2;
     // margin-inline: auto;
