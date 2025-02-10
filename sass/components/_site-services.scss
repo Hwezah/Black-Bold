@@ -23,8 +23,9 @@
   }
 }
 .price-tiers {
-  min-width: max-content;
-  position: relative;
+  // flex-wrap: wrap;
+  max-width: fit-content;
+  // position: relative;
 }
 
 .treatment-process-footer {

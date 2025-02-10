@@ -24,7 +24,7 @@
 }
 
 .footer-nav__socials ul {
-  fill: $color-primary-900;
+  fill: currentColor;
   justify-content: flex-start;
   column-gap: calc($flex-group-gap / 2);
 }
