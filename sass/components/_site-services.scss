@@ -32,7 +32,7 @@
 }
 
 .treatment-process-footer {
-  padding-inline: $size-8;
+  // padding-inline: $size-8;
   position: relative;
   column-gap: $size-10;
   p {
@@ -61,5 +61,5 @@
 //   top: 8rem;
 // }
 .site-services .site-services__box-1 {
-  color: #535353;
+  color: $color-text-default-2;
 }

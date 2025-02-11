@@ -8,10 +8,17 @@
   }
 
   & form {
-    padding-inline: $size-11;
+    padding-inline: $size-10;
     justify-content: center;
-    background-color: $color-neutral-400;
     color: $color-text-default-2;
     // margin-inline: auto;
+  }
+}
+
+.form-group__2 {
+  display: flex;
+  flex-direction: column;
+  .form-cta {
+    align-self: flex-end;
   }
 }
