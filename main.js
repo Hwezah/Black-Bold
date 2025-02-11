@@ -1,3 +1,4 @@
+"use strict";
 const hero = document.querySelector(".site-hero");
 const navMain = document.querySelector(".nav-main");
 const allSections = document.querySelectorAll("section");
@@ -251,3 +252,15 @@ const testimonialSlider = new Slider(
   ".testimonialSlider__btn--right",
   ".testimonial-dots"
 );
+
+const navOpen = document.querySelector(".open-nav");
+const navClose = document.querySelector(".close-nav");
+const navigation = document.querySelector(".nav-main");
+
+navOpen.addEventListener("click", () => {
+  navigation.classList.add("open");
+});
+
+navClose.addEventListener("click", () => {
+  navigation.classList.remove("open");
+});
