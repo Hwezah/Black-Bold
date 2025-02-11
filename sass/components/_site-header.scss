@@ -68,19 +68,7 @@ section {
     color: currentColor;
   }
 }
-.open-nav {
-}
 
-.open-nav,
-.close-nav {
-  background-color: transparent;
-  border: none;
-  color: rgb(255, 255, 255);
-  font-size: 6rem;
-  position: absolute;
-  display: none;
-  cursor: pointer;
-}
 @media (max-width: 860px) {
   .nav-main {
     // visibility: hidden;
@@ -93,16 +81,31 @@ section {
     z-index: 999;
     transform: translateX(100%);
     // opacity: 0;
-    transition: all 0.1s ease;
-  }
-
-  .nav-main.open {
-    transform: translateX(0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 8rem;
+    transition: all 0.1s ease;
+    &.sticky {
+      background-color: $color-neutral-400;
+    }
+    &.open {
+      transform: translateX(0);
+    }
+  }
+  .nav {
+    flex-direction: column;
+    text-align: center;
+
+    a {
+      font-size: $size-8;
+      margin-block: $size-6;
+    }
+    .logo {
+      margin-block-end: $size-8;
+      transform: scale(2);
+    }
   }
 
   .open-nav,

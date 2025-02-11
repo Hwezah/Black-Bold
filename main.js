@@ -246,21 +246,18 @@ const servicesSlider = new Slider(
   ".services-dots"
 );
 
-const testimonialSlider = new Slider(
-  ".testimonial-slide",
-  ".testimonialSlider__btn--left",
-  ".testimonialSlider__btn--right",
-  ".testimonial-dots"
-);
-
+// const testimonialSlider = new Slider(
+//   ".testimonial-slide",
+//   ".testimonialSlider__btn--left",
+//   ".testimonialSlider__btn--right",
+//   ".testimonial-dots"
+// );
 const navOpen = document.querySelector(".open-nav");
 const navClose = document.querySelector(".close-nav");
-const navigation = document.querySelector(".nav-main");
-
 navOpen.addEventListener("click", () => {
-  navigation.classList.add("open");
+  navMain.classList.add("open");
 });
 
 navClose.addEventListener("click", () => {
-  navigation.classList.remove("open");
+  navMain.classList.remove("open");
 });
