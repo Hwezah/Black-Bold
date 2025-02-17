@@ -49,8 +49,9 @@ header.container {
 .nav-main.sticky {
   // max-width: $container-max-width-wide;
   position: fixed;
-  // z-index: 10;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.3);
+  background-color: $color-neutral-500;
   backdrop-filter: blur(10px);
   // padding: $size-6 $size-10;
 }
