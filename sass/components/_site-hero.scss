@@ -92,7 +92,7 @@ section {
     svg {
       height: 2rem;
       width: 2rem;
-      color: currentColor;
+      // color: currentColor;
     }
   }
   .nav-main {
@@ -144,8 +144,13 @@ section {
     transform: scale(1.5);
   }
   .close-nav {
-    top: 1rem;
-    left: 20%;
-    transform: translateX(50%);
+    left: 14%;
+    background-color: transparent;
+    stroke: $color-text-default-2;
+    svg {
+      height: 3rem;
+      width: 3rem;
+      // color: currentColor;
+    }
   }
 }
