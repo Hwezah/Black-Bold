@@ -1,5 +1,5 @@
 @use "../abstracts" as *;
-
+@use "../layout" as *;
 .hero {
   .site-hero {
     // background-image: url(../public/spa-imgs/spa/pexels-angela-roma-7479812.jpg);
@@ -10,5 +10,142 @@
     &__text {
       max-width: 40ch;
     }
+  }
+}
+header.container {
+  background-image: url(../public/spa-imgs/spa/masking-2-lazy-2.jpg);
+  background-position: center;
+  background-size: cover;
+  color: $hero-color;
+  height: 100vh;
+}
+.nav {
+  --flex-column-gap: #{$navigation-gap};
+  list-style: none;
+  font-family: $navigation-font-family;
+  font-weight: $navigation-font-weight;
+}
+
+.nav-main {
+  max-width: $container-max-width-wide;
+  padding: $size-6 $size-10;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+
+  a {
+    cursor: pointer;
+    color: $color-text-default-2;
+    text-decoration: $navigation-link-text-decoration;
+    transition: all 0.2s ease;
+    display: inline-block;
+    &:is(:hover, :focus) {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.nav-main.sticky {
+  // max-width: $container-max-width-wide;
+  position: fixed;
+  // z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  // padding: $size-6 $size-10;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+section {
+  transition: transform 1s, opacity 1s;
+}
+.logo {
+  height: 36px;
+  width: 36px;
+  fill: $color-text-default-2;
+}
+
+.open-nav,
+.close-nav {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .open-nav,
+  .close-nav {
+    border: none;
+    position: absolute;
+    padding: 1.5rem;
+    cursor: pointer;
+    top: 2rem;
+    z-index: 9;
+    background-color: $color-neutral-500;
+    border-radius: 50%;
+    margin-left: $size-6;
+    fill: $color-text-default-2;
+    position: fixed;
+    display: inline-block;
+    svg {
+      height: 2rem;
+      width: 2rem;
+      color: currentColor;
+    }
+  }
+  .nav-main {
+    flex-wrap: nowrap;
+    background-color: $color-neutral-300;
+    width: fit-content;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: translateX(-100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+    &.sticky {
+      background-color: $color-neutral-300;
+    }
+    &.open {
+      transform: translateX(0);
+    }
+    a {
+      font-size: $size-6;
+      margin-block-end: $size-4;
+    }
+
+    .nav {
+      flex-direction: column;
+      text-align: center;
+
+      .cart,
+      .login {
+        transform: scale(1.5);
+      }
+    }
+    .logo {
+      transform: scale(2);
+      margin-bottom: $size-12;
+    }
+  }
+
+  .navigation .nav__link:link,
+  .navigation .nav__link:visited {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  svg.nav__logo {
+    transform: scale(1.5);
+  }
+  .close-nav {
+    top: 1rem;
+    left: 20%;
+    transform: translateX(50%);
   }
 }
