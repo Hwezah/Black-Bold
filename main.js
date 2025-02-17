@@ -2,6 +2,9 @@
 const header = document.querySelector(".site-header");
 const navMain = document.querySelector(".nav-main");
 const allSections = document.querySelectorAll("section");
+const navOpen = document.querySelector(".open-nav");
+const navClose = document.querySelector(".close-nav");
+const body = document.querySelector('body')
 
 //Smooth Scrolling!
 
@@ -21,7 +24,9 @@ const stickyNav = function (entries) {
   const [entry] = entries;
   if (entry.isIntersecting) {
     navMain.classList.remove("sticky");
-  } else navMain.classList.add("sticky");
+  } else {
+    // navOpen.classList.add("sticky")
+    navMain.classList.add("sticky")}
 }; // function is called eachtime the observed element(eg.header) intersects the root element/viewport(based on the options given).
 
 // Options by which the IntersectionObserver API will observe an Element in this case 'header'.
@@ -252,12 +257,18 @@ const servicesSlider = new Slider(
 //   ".testimonialSlider__btn--right",
 //   ".testimonial-dots"
 // );
-const navOpen = document.querySelector(".open-nav");
-const navClose = document.querySelector(".close-nav");
-navOpen.addEventListener("click", () => {
+
+navOpen.addEventListener("click", (e) => {
+  e.stopPropagation();
   navMain.classList.add("open");
 });
 
-navClose.addEventListener("click", () => {
+
+body.addEventListener("click", () => {
+  if (navMain.classList.contains("open")) 
   navMain.classList.remove("open");
-});
+})
+
+// navClose.addEventListener("click", () => {
+//   navMain.classList.remove("open");
+// });
