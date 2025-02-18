@@ -28,14 +28,6 @@
   column-gap: calc($flex-group-gap / 2);
 }
 
-@media (max-width: 900px) {
-  .site-footer.container {
-    padding: $size-8;
-  }
-
-  @media (max-width: 560px) {
-    .site-footer.container {
-      padding: $size-6;
-    }
-  }
+.site-footer.container {
+  padding: clamp($size-6, 5vw, $size-10);
 }
