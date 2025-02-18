@@ -19,6 +19,7 @@
   &__text {
     font-weight: 500;
     max-width: 60ch;
+    margin-right: clamp(0px, 5vw, $size-14);
   }
 }
 
