@@ -10,6 +10,39 @@
     // margin-inline: auto;
   }
 }
+@media (max-width: 900px) {
+  .site-booking.container {
+    padding: $size-8;
+  }
+  .site-booking form {
+    padding: $size-8;
+    padding-top: 0;
+  }
+  .site-booking__form {
+    padding-block: $size-12;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-booking.container {
+    padding: $size-6;
+  }
+  .site-booking form {
+    padding: $size-6;
+  }
+  .site-booking__form {
+    padding-block: $size-10;
+  }
+}
+
+@media (max-width: 350px) {
+  .site-booking.container {
+    padding: $size-3;
+  }
+  .site-booking form {
+    padding: $size-3;
+  }
+}
 
 .site-booking.container,
 .site-booking form {
