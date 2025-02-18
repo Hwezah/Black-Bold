@@ -27,3 +27,15 @@
   justify-content: flex-start;
   column-gap: calc($flex-group-gap / 2);
 }
+
+@media (max-width: 900px) {
+  .site-footer.container {
+    padding: $size-8;
+  }
+
+  @media (max-width: 560px) {
+    .site-footer.container {
+      padding: $size-6;
+    }
+  }
+}

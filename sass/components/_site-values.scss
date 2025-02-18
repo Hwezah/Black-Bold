@@ -11,3 +11,7 @@
     max-width: 50ch;
   }
 }
+
+.site-values__bg {
+  padding: clamp($size-6, 4vw, $size-10);
+}
