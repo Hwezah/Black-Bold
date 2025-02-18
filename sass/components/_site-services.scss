@@ -56,30 +56,11 @@
   height: 1px;
   background-color: #a3a1a1;
 }
-// .site-services__box-2-text {
-//   position: absolute;
-//   top: 8rem;
-// }
+
 .site-services__box-1 {
   color: $color-text-default-2;
 }
 
-// @media (max-width: 900px) {
-//   .site-services__box-1.services {
-//     padding-inline: $size-8;
-//     padding-block-end: $size-4;
-//   }
-
-// }
-// @media (max-width: 560px) {
-//   .site-services__box-1.services {
-//     padding-inline: $size-6;
-//   }
-//   .site-services__box-1.services {
-//     padding-block-end: 0;
-//   }
-
-// }
 .site-services__box-1.services {
   padding-inline: clamp($size-6, 4vw, $size-10);
   padding-block-start: clamp($size-12, 5vw, $size-14);
