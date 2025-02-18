@@ -69,13 +69,6 @@
     padding-inline: $size-8;
     padding-block-end: $size-4;
   }
-
-  // .site-services__text {
-  //   padding-block-start: $size-4;
-  // }
-  // .section-heading {
-  //   padding: 0;
-  // }
 }
 @media (max-width: 560px) {
   .site-services__box-1.services {
@@ -84,11 +77,4 @@
   .site-services__box-1.services {
     padding-block-end: 0;
   }
-  // .site-services__box-1.services {
-  //   padding: $size-6;
-  // }
-
-  // .site-services__text {
-  //   padding-block-start: 0;
-  // }
 }
