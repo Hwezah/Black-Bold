@@ -6,9 +6,9 @@
   --padding: #{$container-min-margin-inline};
   --max-width: #{$container-max-width};
 
-  max-width: min(100%  , var(--max-width));
+  max-width: min(100%, var(--max-width));
   margin-inline: auto;
-  padding-block-start: $container-padding;
+  padding-block-start: clamp($size-10, 4vw, $container-padding);
 }
 
 .container[data-type="narrow"] {

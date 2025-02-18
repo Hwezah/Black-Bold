@@ -47,19 +47,19 @@ $font-weight-bold: $-fw-700;
 
 h1 {
   font-weight: 900;
-  font-size: $font-size-900;
+  font-size: clamp($font-size-700, 5vw, $font-size-900);
   line-height: 1.2;
 }
 
 h2 {
   font-weight: $font-weight-bold;
-  font-size: $font-size-700;
+  font-size: clamp($font-size-500, 5vw, $font-size-700);
   line-height: 1.2;
   letter-spacing: 0.1em;
 }
 h3 {
   font-weight: $font-weight-semi-bold;
-  font-size: $font-size-500;
+  font-size: clamp($font-size-300, 5vw, $font-size-500);
   line-height: 1.2;
 }
 p,

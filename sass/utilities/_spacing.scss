@@ -5,14 +5,14 @@
 }
 
 .flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 2em);
+  margin-top: clamp(0.5em, 5vw, 1em);
 }
-.flow-2 > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 1em);
-}
-.flow-3 > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 0.5em);
-}
+// .flow-2 > *:where(:not(:first-child)) {
+//   margin-top: var(--flow-spacer, 1em);
+// }
+// .flow-3 > *:where(:not(:first-child)) {
+//   margin-top: var(--flow-spacer, 0.5em);
+// }
 
 @each $size-name, $size-value in $sizes {
   .margin {
