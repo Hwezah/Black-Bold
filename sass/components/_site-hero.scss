@@ -36,7 +36,7 @@ header.container {
 
   a {
     cursor: pointer;
-    color: $color-text-default-2;
+    color: $color-neutral-300;
     text-decoration: $navigation-link-text-decoration;
     transition: all 0.2s ease;
     display: inline-block;
@@ -84,7 +84,7 @@ section {
     cursor: pointer;
     top: 2rem;
     z-index: 9;
-    background-color: $color-neutral-500;
+    background-color: $color-neutral-600;
     border-radius: 50%;
     margin-left: $size-6;
     fill: $color-text-default-2;
@@ -98,7 +98,7 @@ section {
   }
   .nav-main {
     flex-wrap: nowrap;
-    background-color: $color-neutral-300;
+    background-color: $color-neutral-600;
     width: fit-content;
     height: 100%;
     position: fixed;
@@ -111,7 +111,7 @@ section {
     justify-content: center;
     transition: all 0.1s ease;
     &.sticky {
-      background-color: $color-neutral-300;
+      background-color: $color-neutral-600;
     }
     &.open {
       transform: translateX(0);
@@ -128,11 +128,14 @@ section {
       .cart,
       .login {
         transform: scale(1.5);
+        fill: $color-neutral-300;
+        stroke: $color-neutral-300;
       }
     }
     .logo {
       transform: scale(2);
       margin-bottom: $size-12;
+      fill: $color-neutral-300;
     }
   }
 
