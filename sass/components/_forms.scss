@@ -14,14 +14,15 @@
     color: #9b9b9b;
     background-color: $form-input-background-color;
     padding: $form-input-padding;
-    width: 100%;
     border: none;
-    //   border: $form-input-border-default;
     border-radius: $form-input-border-radius;
   }
   .form-cta {
     display: inline-block;
     margin-left: auto;
+  }
+  input[type="date"] {
+    min-width: 20.2rem; /* or a specific width like 200px */
   }
 
   ::placeholder {
@@ -32,8 +33,7 @@
   .form-container {
     background-color: #afafaa;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+    // width: 100%;
   }
   label {
     display: block;
@@ -45,6 +45,7 @@
   }
 
   .form-group {
+    width: 90%;
     padding-block-end: $size-4;
   }
 
